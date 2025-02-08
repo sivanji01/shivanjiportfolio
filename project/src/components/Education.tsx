@@ -1,29 +1,27 @@
-import React from 'react';
+import React from "react";
 
 const Education = () => {
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University XYZ',
-      period: '2020 - Present',
-      description: 'Focus on Software Engineering and Artificial Intelligence',
-      achievements: [
-        'Dean\'s List 2021-2022',
-        'President of Computer Science Club',
-        'Winner of Annual Hackathon 2022'
-      ]
+      degree: "BTech in Biomedical Engineering",
+      school: "SRM Institute of Science and Technology, KTR",
+      period: "2022 - 2026",
+      cgpa: "9.62 / 10",
     },
     {
-      degree: 'High School Diploma',
-      school: 'ABC High School',
-      period: '2016 - 2020',
-      description: 'Advanced Placement in Computer Science and Mathematics',
-      achievements: [
-        'Valedictorian',
-        'First Place in Regional Programming Competition',
-        'Math Club President'
-      ]
-    }
+      degree: "12th Grade",
+      school: "Sri Chaitanya Junior College, Guntur",
+      period: "2018 - 2020",
+      marks: "939 / 1000",
+      cgpa: "9.70 / 10",
+      neetmarks: "496 / 720 (2021)",
+    },
+    {
+      degree: "10th Grade",
+      school: "Sri Krishna  Chaitanya Model School, Narasaraopet",
+      period: "2017 - 2018",
+      cgpa: "9.8 / 10",
+    },
   ];
 
   return (
@@ -45,17 +43,12 @@ const Education = () => {
                 </div>
                 <span className="text-sm text-gray-400">{edu.period}</span>
               </div>
-              <p className="text-gray-300">{edu.description}</p>
-              <div>
-                <h4 className="text-lg font-semibold text-white mb-2">
-                  Achievements
-                </h4>
-                <ul className="list-disc list-inside text-gray-300 space-y-1">
-                  {edu.achievements.map((achievement, i) => (
-                    <li key={i}>{achievement}</li>
-                  ))}
-                </ul>
-              </div>
+
+              <p className="text-gray-300">
+                {edu.cgpa && <span>CGPA: {edu.cgpa} | </span>}
+                {edu.marks && <span>Marks: {edu.marks} | </span>}
+                {edu.neetmarks && <span>NEET: {edu.neetmarks}</span>}
+              </p>
             </div>
           ))}
         </div>
