@@ -40,7 +40,7 @@ const NavBar: React.FC<NavBarProps> = ({
               </button>
             ))}
             <a
-              href="https://drive.google.com/file/d/1gl9n1mbohrhOQe4yH6Unej2mxQSkggFq/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1gl9n1mbohrhOQe4yH6Unej2mxQSkggFq/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-purple-400 capitalize px-3 py-2 text-sm font-medium"
