@@ -16,8 +16,8 @@ function App() {
     about: <About />,
     projects: <Projects />,
     education: <Education />,
-    contact: <Contact />
-  };
+    contact: <Contact />,
+   };
 
   return (
     <div className="min-h-screen bg-gray-900">
