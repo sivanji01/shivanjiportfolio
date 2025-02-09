@@ -36,12 +36,14 @@ const Home = () => {
           >
             <Linkedin size={24} />
           </a>
-          <a
-            href="alluri.sivanji9@gmail.com"
-            className="text-gray-400 hover:text-purple-400 transition-colors"
-          >
-            <Mail size={24} />
-          </a>
+              <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=alluri.sivanji9@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-purple-400 transition-colors"
+              >
+              <Mail size={24} />
+              </a>
         </div>
       </div>
     </div>
